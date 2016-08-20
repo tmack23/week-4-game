@@ -1,0 +1,86 @@
+
+body{
+	/*background: url(assets/images/newimage.png) ;*/
+	background-color: lightblue;
+}
+
+.container{
+
+}
+
+#header{
+	width: 240px;
+	height: 30px
+	color: #fff;
+	background-color: orange;
+	padding: 20px 0 20px 0;
+	text-align: center;
+	margin: 5px 0 5px 0;
+}
+#instruct{
+	color: green;
+	background-color: #ee9f5e;
+	width: 395px;
+	height: 400px;
+} 
+
+li {
+	list-style: none;
+	text-align: auto;
+	padding: 20px 0 0 0;
+	margin-left: -30px;
+}
+
+
+#rnBox{
+	width: 200px;
+	height: 100px;
+	background-color: green;
+	color: purple;
+	margin-top: 10px;
+	float: left;
+	font-weight: bolder;
+	font-size: 50px;
+}
+#tallyBox{
+	width: 70px;
+	height: 100px;
+	background-color: #5eeedc;
+	color: purple;
+	float: left;
+	clear: both;
+	margin-left: 210px;
+	margin-top: -100px;
+	position:;
+}
+.crystals > ul > div > li > img {
+	width: 80px;
+	height: 75px;
+	display: inline-block;
+	background-color: white;
+	position:relative;
+	margin: 10px 0 10px 5px;
+	float: left;
+
+}
+.crystals{
+	margin-left: -15px;
+}
+h4{
+	width: 200px;
+	height: 20px;
+	color: white;
+	background-color: #129685;
+	position: absolute;
+	margin-top: 90px;
+}
+
+#totalScoreBox{
+width: 200px;
+height: 100px;
+color: white;
+background-color: #129685;
+margin-top: 130px;
+font-size: 50px;
+
+}
