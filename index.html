@@ -3,51 +3,71 @@
 <head>
  	<meta charset="UTF-8">
 	<title>crystal collecter</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
-<script src="assets/javascript/game.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
 </head>
 <body>
-	<div id="container">
+
+
 	
-		<h1 id="header">CrystalCollector!</h1>
+	<h1 id="header">The Crystal Collector</h1>
+	<img src="assets/images/MinerBa640.jpg" id="miners" >
+	
+	<main class="container">
+	
+		
 
-		<div id="instruct">
-			<ul>
-				<li>You will be given a random number at the start 
-				of the game.</li> 
-				<li>There are four crystals below. By clicking on a 
-				crystal you will add a specific amount of points to 
-				your total score.</li>
-				<li>You win the game by matching your total score to 
-				random number, you lose the game if your total score 
-				goes above the random number.</li> 
-				<li>The value of each crystal is hidden from you until you click on it.</li>
-				<li>Each time when the game starts, the game will change the value of each crystal.</li>
-			</ul>
+			<div id="instructions">
+			
+			<h2>How to play:</h2>
+				<ol>
+					<li>You will be given a random number of crystals at the start 
+						of the game that you must match with your pile of crystals.</li> 
+					<li>There are four crystals below. By clicking on a 
+						crystal you will add a specific amount of points to 
+						your total score.</li>
+					<li>You win the game by matching your total score to 
+						random number, you lose the game if your total score 
+						goes above the random number.</li> 
+					<li>The value of each crystal is hidden from you until you click on it.</li>
+					<li>Each time when the game starts, the game will change the value of each crystal.</li>
+				</ol>
 		</div>
+			
+			<button type="button" id="startButton" class="btn btn-success"><h1 id="gameChange">Start Game</h1></button>
 
 
-		<div><span id="rnBox"></span></div>
-		<div id="tallyBox">
-			<div><p>wins: <span id="wins"></span></p></div>
-			<div><p>losses: <span id="losses"></span></p></div>
+				<div>
+					<img src="assets/images/diamond1.png" id="crystal1">
+					<img src="assets/images/gem.png" id="crystal2">
+					<img src="assets/images/diamond2.png" id="crystal3">
+					<img src="assets/images/crystals.png" id="crystal4">
+				</div>
+
+<!--table to potentionally append data underneath crystals -->
+<!-- <table>
+  <thead>
+    <tr>
+      <th id="holder1">holder1</th>
+      <th id="holder2">holder2</th>
+      <th id="holder3">holder3</th>
+      <th id="holder4">holder4</th>
+    </tr>
+  </thead>
+</table> -->
+		
+
+
+		<div id="collections">
+			<h2 id="toCollect">Crystal to collect:</h2>
+			<h2 id="crystalCollected">Crytsal collected:</h2>
 		</div>
-		<div class="crystals">
-			<ul>
-				<div id="diamond1"><li><img src="assets/images/diamond1.png"></li></div>
-				<div id="gem"><li><img src="assets/images/gem.png"></li></div>
-				<div id="diamond2"><li><img src="assets/images/diamond2.png"></li></div>
-				<div id="crystals"><li><img src="assets/images/crystals.png"></li></div>
-			</ul>
-		</div>
-
-		<h4>Your total score is:</h4>
-
-		<div id="totalScoreBox"><span id="totalScore"></span></div>
-
-	</div>
-
+	
+	</main>
 
 </body>
 </html>
